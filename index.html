@@ -159,7 +159,7 @@
     <script>
         async function updateBlur() {
             try {
-                const response = await fetch('http://localhost:3000/total-donations');
+                const response = await fetch('https://doacao-gatos-backend.onrender.com/total-donations');
                 const data = await response.json();
                 const totalDonations = data.total;
 
