@@ -7,8 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
     <style>
-        /* Reset de margens e paddings */
         * {
             margin: 0;
             padding: 0;
@@ -16,7 +17,7 @@
         }
         html, body {
             height: 100vh;
-            overflow: hidden; /* Remove a rolagem */
+            overflow: hidden;
         }
         body {
             background-color: black;
@@ -29,7 +30,7 @@
         .content {
             display: flex;
             flex-direction: column;
-            justify-content: space-between; /* Distribui o espaço entre os elementos */
+            justify-content: space-between;
             align-items: center;
             height: 100vh;
             width: 100%;
@@ -40,7 +41,7 @@
             padding: 0 10px;
         }
         header h1 {
-            font-size: clamp(1.5em, 4vw, 2.5em); /* Ajusta o tamanho da fonte */
+            font-size: clamp(1.5em, 4vw, 2.5em);
             margin-bottom: 5px;
         }
         header p {
@@ -56,19 +57,19 @@
             transition: filter 1s ease;
         }
         .donate-button {
-            background-color: #05c02e; /* Cor sólida */
+            background-color: #05c02e;
             color: white;
             padding: 12px 24px;
             font-size: clamp(1em, 2.5vw, 1.5em);
             border: none;
-            border-radius: 5px; /* Cantos levemente arredondados */
+            border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease, transform 0.2s ease;
             margin: 10px 0;
         }
         .donate-button:hover {
-            background-color: #037a03; /* Tom mais escuro no hover */
-            transform: translateY(-2px); /* Leve elevação no hover */
+            background-color: #037a03;
+            transform: translateY(-2px);
         }
         .progress-container {
             width: 80%;
@@ -86,7 +87,7 @@
             font-size: clamp(0.9em, 2vw, 1.2em);
             margin-bottom: 90px;
         }
-        /* Responsividade adicional */
+
         @media (max-height: 500px) {
             .donate-button {
                 padding: 8px 16px;
@@ -99,6 +100,7 @@
             }
         }
 
+
         img {
     width: auto;
     max-width: 800px;
@@ -107,9 +109,12 @@
     transition: filter 1s ease;
 }
 
+
     </style>
 </head>
 <body>
+
+    <a href="para-onde-vai-o-dinheiro.html" class="info-link">Para onde vai o dinheiro?</a>
 
     <div class="content">
 
@@ -118,7 +123,7 @@
             <p>Contribua para proporcionar uma vida melhor aos felinos que necessitam.</p>
         </header>
 
-        <img id="cat-image" alt="Imagem da Campanha">
+        <img id="cat-image" src="private-images/gato-de-rua.jpg" alt="Imagem da Campanha">
 
         <button class="donate-button" onclick="window.location.href='https://buy.stripe.com/9AQ4iseRKgxg7O8bIJ'">Salve um animal!</button>
 
